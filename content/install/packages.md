@@ -10,7 +10,13 @@ Get the latest rpm, deb or snap packages from [Github](https://github.com/txn2/k
 ### Docker
 
 ```bash
-docker pull txn2/kubefwd:1.4.10
+docker run --rm --name fwd -v "$HOME/.kube/config:/root/.kube/config" -it txn2/kubefwd:1.4.10 svc
+```
+
+Assuming you have a service named ok listening on port 80, in another terminal issue a curl command from the running container:
+
+```bash
+docker exec fwd curl -s http://ok:80
 ```
 
 ![](https://img.shields.io/docker/pulls/txn2/kubefwd.svg)

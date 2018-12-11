@@ -3,7 +3,7 @@ title = "Source"
 +++
 Compiling from source requires [Go](https://golang.org/):
 
-![](https://img.shields.io/github/forks/txn2/kubefwd.svg?label=Fork&style=social)
+[![](https://img.shields.io/github/forks/txn2/kubefwd.svg?label=Fork&style=social)](https://github.com/txn2/kubefwd)
 
 ```bash
 mkdir -p ~/go/src/github.com/txn2/
