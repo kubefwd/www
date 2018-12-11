@@ -1,0 +1,39 @@
+<div class="row section featured topspace">
+
+    <h2 class="section-title"><span>Install</span></h2>
+
+    <div class="">
+        {{ range where .Data.Pages "Section" "install" }}
+        <div class="col-sm-8 col-md-4">
+            <h3 class="text-center">{{ .Title }}</h3>
+            <p>{{ .Content }}</p>
+            <!--<p class="text-center"><a href="{{ .Permalink }}" class="btn btn-action">Read more</a></p>-->
+        </div>
+        {{ end }}
+    </div>
+
+    <h2 class="section-title"><span>Demo</span></h2>
+
+    <div class="">
+        {{ range where .Data.Pages "Section" "demo" }}
+        <div class="col-sm-6 col-md-3">
+            <h3 class="text-center">{{ .Title }}</h3>
+            <p>{{ .Summary }}</p>
+            <!--<p class="text-center"><a href="{{ .Permalink }}" class="btn btn-action">Read more</a></p>-->
+        </div>
+        {{ end }}
+    </div>
+
+    <h2 class="section-title"><span>How It Works</span></h2>
+
+    <div class="">
+        {{ range where .Data.Pages "Section" "details" }}
+        <div class="col-sm-6 col-md-3">
+            <h3 class="text-center">{{ .Title }}</h3>
+            <p>{{ .Summary }}</p>
+            <!--<p class="text-center"><a href="{{ .Permalink }}" class="btn btn-action">Read more</a></p>-->
+        </div>
+        {{ end }}
+    </div>
+
+</div> <!-- / section -->

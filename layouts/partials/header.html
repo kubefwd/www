@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"    content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
+
+    <title>{{ .Title }}</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/ico/favicon-16x16.png">
+    <link rel="manifest" href="/meta/site.webmanifest">
+    <link rel="mask-icon" href="/images/ico/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Bootstrap -->
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
+    <!-- Icons -->
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alice|Open+Sans:400,300,700">
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/styles.css">
+
+    <!--[if lt IE 9]> <script src="js/html5shiv.js"></script> <![endif]-->
+
+    {{ if .Site.Params.customsharethis }}
+    <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property={{ .Site.Params.sharethis.property }}&product=custom-share-buttons"></script>
+    {{ else }}
+    <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property={{ .Site.Params.sharethis.property }}&product=inline-share-buttons"></script>
+    {{ end }}
+
+</head>
+<body class="home">
+
+<header id="header">
+    <div id="head" class="parallax" parallax-speed="2">
+        <h1 id="logo" class="text-center">
+            <img class="mast-logo" src="/images/logo-800.png" alt="{{ .Site.Params.name }}">
+            <!--<span class="title"> - TEST</span>-->
+            <span class="tagline">{{ .Site.Params.Description }}</span>
+            <!-- Place this tag where you want the button to render. -->
+            <a class="github-button" href="https://github.com/txn2/kubefwd" data-size="large" data-show-count="true" aria-label="Star txn2/kubefwd on GitHub">Star</a>
+        </h1>
+    </div>
+
+    {{ partial "menu.html" . }}
+
+</header>
