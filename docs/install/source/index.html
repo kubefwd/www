@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"    content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
+
+    <title>Source</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/ico/favicon-16x16.png">
+    <link rel="manifest" href="/meta/site.webmanifest">
+    <link rel="mask-icon" href="/images/ico/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
+    
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alice|Open+Sans:400,300,700">
+    
+    <link rel="stylesheet" href="https://kubefwd.com/css/styles.css">
+
+    
+
+    
+    <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=&product=inline-share-buttons"></script>
+    
+
+</head>
+<body class="home">
+
+<header id="header">
+    <div id="head" class="parallax" parallax-speed="2">
+        <h1 id="logo" class="text-center">
+            <img class="mast-logo" src="/images/logo-800.png" alt="kubefwd">
+            
+            <span class="tagline">Kubernetes builk service forwarding.</span>
+            
+            <a class="github-button" href="https://github.com/txn2/kubefwd" data-size="large" data-show-count="true" aria-label="Star txn2/kubefwd on GitHub">Star</a>
+        </h1>
+    </div>
+
+    <nav class="navbar navbar-default navbar-sticky">
+    <div class="container-fluid">
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="true">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1">
+
+            <ul class="nav navbar-nav">
+                
+                <li>
+                    <a href="https://github.com/txn2/kubefwd/releases">Releases</a>
+                </li>
+                
+                <li>
+                    <a href="https://github.com/txn2/kubefwd">Source</a>
+                </li>
+                
+                
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+
+</header>
+
+
+<main id="main">
+
+	<div class="container">
+
+		<div class="row topspace">
+			<div class="col-sm-8 col-sm-offset-2">
+
+ 				<article class="post">
+					<header class="entry-header">
+ 						<div class="entry-meta">
+ 							<span class="posted-on"><time class="entry-date published" date="0001-01-01 00:00:00 &#43;0000 UTC">January 1, 0001</time></span>
+ 						</div>
+ 						<h1 class="entry-title"><a href="https://kubefwd.com/install/source/" rel="bookmark">Source</a></h1>
+					</header>
+					<div class="entry-content">
+						<p>Compiling from source requires <a href="https://golang.org/">Go</a>:</p>
+
+<p><a href="https://github.com/txn2/kubefwd"><img src="https://img.shields.io/github/forks/txn2/kubefwd.svg?label=Fork&amp;style=social" alt="" /></a></p>
+
+<pre><code class="language-bash">mkdir -p ~/go/src/github.com/txn2/
+</code></pre>
+
+<pre><code class="language-bash">git clone git@github.com:txn2/kubefwd.git ~/go/src/github.com/txn2/kubefwd
+</code></pre>
+
+<pre><code class="language-bash">cd ~/go/src/github.com/txn2/kubefwd
+git checkout 1.4.10
+</code></pre>
+
+<pre><code class="language-bash">GOBIN=~/bin go install -ldflags=&quot;-X main.Version=1.4.10&quot; ./cmd/kubefwd/kubefwd.go
+</code></pre>
+
+<pre><code class="language-bash">~/bin/kubefwd version
+</code></pre>
+
+					</div>
+				</article>
+
+			</div>
+		</div> 
+
+        <div class="row">
+			<div class="col-sm-8 col-sm-offset-2">
+
+				<div id="share">
+                    
+				</div>
+			</div>
+		</div> 
+		<div class="clearfix"></div>
+
+		<div class="row">
+			<div class="col-sm-8 col-sm-offset-2">
+
+				<div id="comments">
+                    
+				</div>
+			</div>
+		</div> 
+		<div class="clearfix"></div>
+
+	</div>	
+
+</main>
+
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            
+
+            
+
+            
+            <div class="col-md-3 widget">
+                <h3 class="widget-title">About</h3>
+                <div class="widget-body">
+                    <p><a href="https://github.com/txn2/kubefwd">kubefwd</a> is developed by <a href="https://twitter.com/cjimti">Craig Johnston</a>
+                        and <a href="https://txn2.com">TXN2</a>. TXN2 offers a collection of open source applications with support and
+                        contributions by industry innovators.</p>
+                </div>
+            </div>
+            <div class="col-md-3 widget">
+                <h3 class="widget-title">Open Source</h3>
+                <div class="widget-body">
+                    <p><a href="https://github.com/txn2/kubefwd">kubefwd</a> is  open source and available on <a href="https://github.com/txn2/kubefwd">Github</a>.
+                        Contributors welcome.</p>
+                </div>
+            </div>
+            
+
+            
+
+
+            <div class="col-md-3 widget">
+                <h3 class="widget-title">Merch</h3>
+                <div class="widget-body">
+                    <p>
+                        <a href="https://amzn.to/2QlrUJM"><img src="images/shirt.png"></a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-3 widget">
+                <h3 class="widget-title">Contact</h3>
+                <div class="widget-body">
+                    <p>
+                        email: <a href="mailto:cjimti@gmail.com">cjimti@gmail.com</a><br/>
+                        twitter: <a href="https://twitter.com/cjimti">@cjimti</a>
+                    </p>
+                </div>
+            </div>
+
+        </div> 
+    </div>
+</footer>
+
+<footer id="underfooter">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-6 widget">
+                <div class="widget-body">
+                    <p></p>
+                </div>
+            </div>
+
+            <div class="col-md-6 widget">
+                <div class="widget-body">
+                    <p class="text-right">
+                        Copyright &copy; 2019, kubefwd<br>
+                    </p>
+                </div>
+            </div>
+
+        </div> 
+    </div>
+</footer>
+
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="https://kubefwd.com/js/template.js"></script>
+<script id="dsq-count-scr" src="///count.js" async></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118020463-2"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-118020463-2');
+</script>
+</body>
+</html>
+
