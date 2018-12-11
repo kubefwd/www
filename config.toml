@@ -1,3 +1,39 @@
-baseURL = "http://example.org/"
+baseURL = "https://kubefwd.com/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "kubefwd - Kubernetes Service Forwarding"
+theme = "hugo-initio"
+publishDir = "docs"
+
+[params]
+    name = "kubefwd"
+    description = "Kubernetes builk service forwarding."
+    email = ""
+    phone = ""
+    address = ""
+    year = 2019
+    background = ""
+    favicon = "images/gt_favicon.png"
+    DateForm = "January 2, 2006"
+
+    showSubheader = true
+    showServices = true
+    showRecentWorks = false
+    showDownload = false
+    showClients = false
+
+    footerEnableContact = false
+    footerEnableFollowme = false
+    footerEnableTextWidget = true
+    footerEnableFormWidget = false
+
+[[menu.main]]
+    name = "Releases"
+    url = "https://github.com/txn2/kubefwd/releases"
+    weight = 5
+[[menu.main]]
+    name = "Source"
+    url = "https://github.com/txn2/kubefwd"
+    weight = 5
+
+[params.google.analytics]
+    trackerID = "UA-118020463-2"
