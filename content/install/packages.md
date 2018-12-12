@@ -8,7 +8,7 @@ Get the latest rpm, deb or snap packages from [Github](https://github.com/txn2/k
 [![](https://img.shields.io/github/downloads/txn2/kubefwd/latest/total.svg)](https://github.com/txn2/kubefwd/releases)
 [![](https://img.shields.io/github/release/txn2/kubefwd.svg)](https://github.com/txn2/kubefwd/releases)
 
-### Docker
+#### Docker
 
 This option does not require sudo to run, however named services will only be available from within the docker container.
 

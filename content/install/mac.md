@@ -17,7 +17,7 @@ Forward services in the **example** namespace:
 sudo -E kubefwd svc -n example
 ```
 
-### Upgrade
+#### Upgrade
 
 ```bash
 brew upgrade kubefwd
