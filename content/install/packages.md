@@ -1,5 +1,6 @@
 +++
 title = "Packages"
+weight = 200
 +++
 
 Get the latest rpm, deb or snap packages from [Github](https://github.com/txn2/kubefwd/releases) including binary releases for Linux, Windows and MacOs. Support for AMD64 and ARM architectures.
@@ -8,6 +9,8 @@ Get the latest rpm, deb or snap packages from [Github](https://github.com/txn2/k
 [![](https://img.shields.io/github/release/txn2/kubefwd.svg)](https://github.com/txn2/kubefwd/releases)
 
 ### Docker
+
+This option does not require sudo to run, however named services will only be available from within the docker container.
 
 ```bash
 docker run --rm --name fwd -v "$HOME/.kube/config:/root/.kube/config" -it txn2/kubefwd:1.4.10 svc

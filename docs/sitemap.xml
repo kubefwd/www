@@ -3,13 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://kubefwd.com/categories/</loc>
-    <priority>0</priority>
+    <loc>https://kubefwd.com/use/howitworks/</loc>
   </url>
   
   <url>
-    <loc>https://kubefwd.com/install/</loc>
-    <priority>0</priority>
+    <loc>https://kubefwd.com/install/mac/</loc>
   </url>
   
   <url>
@@ -21,17 +19,28 @@
   </url>
   
   <url>
+    <loc>https://kubefwd.com/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://kubefwd.com/install/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://kubefwd.com/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://kubefwd.com/use/</loc>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://kubefwd.com/</loc>
     <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://kubefwd.com/install/mac/</loc>
   </url>
   
 </urlset>

@@ -11,15 +11,36 @@
     
     
     <item>
+      <title>How it works</title>
+      <link>https://kubefwd.com/use/howitworks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kubefwd.com/use/howitworks/</guid>
+      <description>kubefwd allows applications with connection strings like http://elasticsearch:9200/ or tcp://db:3306 to communicate into the remote cluster. It does this by adding 127.x IP addresses to your local loopback network interface, this way kubefwd can attach listeners on the same port as the Kubernetes service.</description>
+    </item>
+    
+    <item>
+      <title>macOs</title>
+      <link>https://kubefwd.com/install/mac/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kubefwd.com/install/mac/</guid>
+      <description> MacOs install with homebrew:
+brew install txn2/tap/kubefwd  Get a list of service forwarding options:
+kubefwd help svc  Forward services in the example namespace:
+sudo -E kubefwd svc -n example  Upgrade brew upgrade kubefwd  </description>
+    </item>
+    
+    <item>
       <title>Packages</title>
       <link>https://kubefwd.com/install/packages/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kubefwd.com/install/packages/</guid>
-      <description> Get the latest rpm, deb or snap packages from Github including binary releases for Linux, Windows and MacOs. Support for AMD64 and ARM architectures.
+      <description>Get the latest rpm, deb or snap packages from Github including binary releases for Linux, Windows and MacOs. Support for AMD64 and ARM architectures.
  
-Docker docker run --rm --name fwd -v &amp;quot;$HOME/.kube/config:/root/.kube/config&amp;quot; -it txn2/kubefwd:1.4.10 svc  Assuming you have a service named ok listening on port 80, in another terminal issue a curl command from the running container:
-docker exec fwd curl -s http://ok:80  </description>
+Docker This option does not require sudo to run, however named services will only be available from within the docker container.
+docker run --rm --name fwd -v &amp;quot;$HOME/.kube/config:/root/.kube/config&amp;quot; -it txn2/kubefwd:1.4.10 svc  Assuming you have a service named ok listening on port 80, in another terminal issue a curl command from the running container:</description>
     </item>
     
     <item>
@@ -31,18 +52,6 @@ docker exec fwd curl -s http://ok:80  </description>
       <description>Compiling from source requires Go:
 
 mkdir -p ~/go/src/github.com/txn2/  git clone git@github.com:txn2/kubefwd.git ~/go/src/github.com/txn2/kubefwd  cd ~/go/src/github.com/txn2/kubefwd git checkout 1.4.10  GOBIN=~/bin go install -ldflags=&amp;quot;-X main.Version=1.4.10&amp;quot; ./cmd/kubefwd/kubefwd.go  ~/bin/kubefwd version  </description>
-    </item>
-    
-    <item>
-      <title>macOs</title>
-      <link>https://kubefwd.com/install/mac/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://kubefwd.com/install/mac/</guid>
-      <description>MacOs install with homebrew:
-brew install txn2/tap/kubefwd  Get a list of service forwarding options:
-kubefwd help svc  Forward services in the example namespace:
-sudo -E kubefwd svc -n example  </description>
     </item>
     
   </channel>

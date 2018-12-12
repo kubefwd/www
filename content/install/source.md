@@ -1,5 +1,6 @@
 +++
 title = "Source"
+weight = 300
 +++
 Compiling from source requires [Go](https://golang.org/):
 

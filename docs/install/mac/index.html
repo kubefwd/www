@@ -40,7 +40,7 @@
             <img src="/images/kubefwd_symbol_200.png">
             <img class="mast-logo" src="/images/logo-600.png" alt="kubefwd">
             
-            <span class="tagline">Kubernetes builk service forwarding.</span>
+            <span class="tagline">Kubernetes bulk service port-forwarding.</span>
             
             <a class="github-button" href="https://github.com/txn2/kubefwd" data-size="large" data-show-count="true" aria-label="Star txn2/kubefwd on GitHub">Star</a>
         </h1>
@@ -96,7 +96,9 @@
  						<h1 class="entry-title"><a href="https://kubefwd.com/install/mac/" rel="bookmark">macOs</a></h1>
 					</header>
 					<div class="entry-content">
-						<p><strong>MacOs</strong> install with <a href="https://brew.sh">homebrew</a>:</p>
+						
+
+<p><strong>MacOs</strong> install with <a href="https://brew.sh">homebrew</a>:</p>
 
 <pre><code class="language-bash">brew install txn2/tap/kubefwd
 </code></pre>
@@ -109,6 +111,11 @@
 <p>Forward services in the <strong>example</strong> namespace:</p>
 
 <pre><code class="language-bash">sudo -E kubefwd svc -n example
+</code></pre>
+
+<h3 id="upgrade">Upgrade</h3>
+
+<pre><code class="language-bash">brew upgrade kubefwd
 </code></pre>
 
 					</div>

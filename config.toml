@@ -6,7 +6,7 @@ publishDir = "docs"
 
 [params]
     name = "kubefwd"
-    description = "Kubernetes builk service forwarding."
+    description = "Kubernetes bulk service port-forwarding."
     email = ""
     phone = ""
     address = ""

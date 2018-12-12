@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Uses on kubefwd - Kubernetes Service Forwarding</title>
+    <link>https://kubefwd.com/use/</link>
+    <description>Recent content in Uses on kubefwd - Kubernetes Service Forwarding</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://kubefwd.com/use/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How it works</title>
+      <link>https://kubefwd.com/use/howitworks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kubefwd.com/use/howitworks/</guid>
+      <description>kubefwd allows applications with connection strings like http://elasticsearch:9200/ or tcp://db:3306 to communicate into the remote cluster. It does this by adding 127.x IP addresses to your local loopback network interface, this way kubefwd can attach listeners on the same port as the Kubernetes service.</description>
+    </item>
+    
+  </channel>
+</rss>

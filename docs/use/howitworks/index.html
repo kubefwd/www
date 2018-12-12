@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
 
-    <title>Source</title>
+    <title>How it works</title>
 
     <link rel="apple-touch-icon" sizes="180x180" href="/images/ico/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/images/ico/favicon-32x32.png">
@@ -93,28 +93,10 @@
  						<div class="entry-meta">
  							<span class="posted-on"><time class="entry-date published" date="0001-01-01 00:00:00 &#43;0000 UTC">January 1, 0001</time></span>
  						</div>
- 						<h1 class="entry-title"><a href="https://kubefwd.com/install/source/" rel="bookmark">Source</a></h1>
+ 						<h1 class="entry-title"><a href="https://kubefwd.com/use/howitworks/" rel="bookmark">How it works</a></h1>
 					</header>
 					<div class="entry-content">
-						<p>Compiling from source requires <a href="https://golang.org/">Go</a>:</p>
-
-<p><a href="https://github.com/txn2/kubefwd"><img src="https://img.shields.io/github/forks/txn2/kubefwd.svg?label=Fork&amp;style=social" alt="" /></a></p>
-
-<pre><code class="language-bash">mkdir -p ~/go/src/github.com/txn2/
-</code></pre>
-
-<pre><code class="language-bash">git clone git@github.com:txn2/kubefwd.git ~/go/src/github.com/txn2/kubefwd
-</code></pre>
-
-<pre><code class="language-bash">cd ~/go/src/github.com/txn2/kubefwd
-git checkout 1.4.10
-</code></pre>
-
-<pre><code class="language-bash">GOBIN=~/bin go install -ldflags=&quot;-X main.Version=1.4.10&quot; ./cmd/kubefwd/kubefwd.go
-</code></pre>
-
-<pre><code class="language-bash">~/bin/kubefwd version
-</code></pre>
+						<p>kubefwd allows applications with connection strings like <a href="http://elasticsearch:9200/">http://elasticsearch:9200/</a> or tcp://db:3306 to communicate into the remote cluster. It does this by adding 127.x IP addresses to your local loopback network interface, this way kubefwd can attach listeners on the same port as the Kubernetes service.</p>
 
 					</div>
 				</article>
